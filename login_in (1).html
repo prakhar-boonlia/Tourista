@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+         .info{
+            background-color: gray;
+        }
+        .contact{
+            color: white;
+        }
+        .contact1{
+            background-color:blue;
+            font-size:40px;
+            color:white;
+        }
+        .nav{
+            list-style: none;
+            font-weight: lighter;
+            display: flex;
+            gap: 3rem;
+            padding-left: 25px;
+            box-sizing: border-box;
+            justify-content: space-evenly;
+        }
+        .navelement{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            margin-top: 8px;
+        }
+        .container{
+            width:450px;
+            height: 450px;
+            background-color: darkgrey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main{
+            width: 100%;
+            height: 690px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Times New Roman';
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+        .inputbox{
+            position: relative;
+            width: 310px;
+            margin: 30px 0;
+            border-bottom: 2px solid #fff;
+        }
+        .inputbox label{
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            transform: translateY(-50%);
+            color: #fff;
+            pointer-events: none;
+            transition: .5s;
+            background-color: transparent;
+        }
+        input:focus ~label, input:valid ~ label{
+            top: -5px;
+        }
+        .inputbox input{
+            width: 100%;
+            height: 50px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            padding: 0 35px 0 5px;
+            font-size: 1em;
+            color: #fff;
+        }
+        .inputbox ion-icon{
+            position: absolute;
+            right: 8px;
+            color: #fff;
+            top: 20px;
+        }
+        #signin{
+            width: 100%;
+            height: 40px;
+            border-radius: 40px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .signup{
+            color: #fff;
+            text-align: center;
+            margin: 25px 0 10px;
+            font-size: large;
+        }
+        .signup a{
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 40px;background-color: black;">
+        <ul class="nav">
+            <li><a href="index.html" class="navelement">Home</a></li>
+            <li><a href="about.html" class="navelement" style="margin-top: 12px;">About</a></li>
+            <li><a href="place.html" class="navelement">Places</a></li>
+            <li><input type="search" list="datalist" autocomplete autofocus placeholder="Name of the place" style=" width: 500px;text-align: center; height: 25px;margin-top: 8px;border-radius: 5px;"></li>
+            <datalist id="datalist">
+                <option>Bangalore</option>
+                <option>Lal Bagh</option>
+                <option>Wonderla</option>
+                <option>Mysore</option>
+                <option>Mysore Palace</option>
+                <option>Brindavana Gardern</option>
+                <option>Mysore Zoo</option>
+            </datalist>
+            <li><i class="bi bi-mic-fill"></i></li>
+            <li><a href="login_up.html" class="navelement">Register</a></li>
+            <li><a href="login_in.html" class="navelement">Login Page</a></li>
+            <li><a href="contactus.html" class="navelement">Contact us</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="container">
+            <form action="" method="post">
+                <h1>SIGN IN</h1>
+                <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" name="uemail" id="uemail" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" name="upass" id="upass" required>
+                    <label for="">Password</label>
+                </div>
+                <input type="submit" value="SIGN IN" name="signin" id="signin">
+                <p class="signup">If you don't have an account <a href="login_up.html">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+    <fieldset class="info">
+        <h1 class="contact">CONTACT US</h1>
+        <h2 class="contact">NAME : Priyanshu Sharma<br>
+            <i class="bi bi-envelope-at-fill"></i> : priyanshusharma408@gmail.com<br>
+            <i class="bi bi-phone"></i> : 6363339521
+        </h2>
+        <h2 class="contact">NAME : Prakhar Boonlia<br>
+            <i class="bi bi-envelope-at-fill"></i> : boonliaprakhar@gmail.com<br>
+            <i class="bi bi-phone"></i> : 9468947947
+        </h2>
+    </fieldset>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

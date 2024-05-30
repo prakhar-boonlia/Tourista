@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        .info{
+            background-color: gray;
+        }
+        .contact{
+            color: white;
+        }
+        .contact1{
+            background-color:blue;
+            font-size:40px;
+            color:white;
+        }
+        .nav{
+            list-style: none;
+            font-weight: lighter;
+            display: flex;
+            gap: 3rem;
+            padding-left: 25px;
+            box-sizing: border-box;
+            justify-content: space-evenly;
+        }
+        .navelement{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 40px;background-color: black;">
+        <ul class="nav">
+            <li><a href="index.html" class="navelement">Home</a></li>
+            <li><a href="about.html" class="navelement" style="margin-top: 12px;">About</a></li>
+            <li><a href="place.html" class="navelement">Places</a></li>
+            <li><input type="search" list="datalist" autocomplete autofocus placeholder="Name of the place" style=" width: 500px;text-align: center; height: 25px;margin-top: 8px;border-radius: 5px;"></li>
+            <datalist id="datalist">
+                <option>Bangalore</option>
+                <option>Lal Bagh</option>
+                <option>Wonderla</option>
+                <option>Mysore</option>
+                <option>Mysore Palace</option>
+                <option>Brindavana Gardern</option>
+                <option>Mysore Zoo</option>
+            </datalist>
+            <li><i class="bi bi-mic-fill"></i></li>
+            <li><a href="login_up.html" class="navelement">Register</a></li>
+            <li><a href="login_in.html" class="navelement">Login Page</a></li>
+            <li><a href="contactus.html" class="navelement">Contact us</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h1>About this Website</h1>
+        <pre style="font-size: large; font-family: 'Times New Roman';">
+            The website "Tourista" will help the tourists to know better about the place Bangalore and Mysore.
+            This website will highlight on:
+        </pre>
+        <ol style="font-size: large; font-family: 'Times New Roman';">
+            <li>About the place in detail</li>
+            <li>Tickets</li>
+            <li>Timings</li>
+            <li>Video and proper location of place on map</li>
+        </ol>
+    </div>
+    <fieldset class="info">
+        <h1 class="contact">CONTACT US</h1>
+        <h2 class="contact">NAME : Priyanshu Sharma<br>
+            <i class="bi bi-envelope-at-fill"></i> : priyanshusharma408@gmail.com<br>
+            <i class="bi bi-phone"></i> : 6363339521
+        </h2>
+        <h2 class="contact">NAME : Prakhar Boonlia<br>
+            <i class="bi bi-envelope-at-fill"></i> : boonliaprakhar@gmail.com<br>
+            <i class="bi bi-phone"></i> : 9468947947
+        </h2>
+    </fieldset>
+</body>
+</html>
